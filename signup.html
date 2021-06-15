@@ -2,32 +2,64 @@
 <html lang='en'>
 
 <head>
-<link href="styles.css" rel="stylesheet" type="text/css">
-<meta charset="UTF-8">
-<title>Sign Up</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
 
 </head>
 
 <body>
     <header>
         <div class="container">
-          <h1 class="logo"></h1>
-    
-          <nav>
-            <ul>
-              <li><a href="home.html">Home</a></li>
-              <li><a href="schedule.html">Schedule</a></li>
-              <li><a href="#">Sign Up</a></li>
-              
-            </ul>
-          </nav>
+            <h1 class="logo"></h1>
+
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="#">Sign Up</a></li>
+
+                </ul>
+            </nav>
         </div>
-      </header>
+    </header>
+    <div class="setup-form">
+        <form>
+            <div class="mb-3">
+                <select class="form-select" aria-label="Default select example">
 
-      
+                    <option selected>Open this select menu</option>
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Master">Master</option>
+                    <option value="Miss">Miss</option>
+
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">First Name</label>
+
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label">Surname</label>
+
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+
+
+    </form>
+
+
+
 </body>
-
-
-
 
 </html>
