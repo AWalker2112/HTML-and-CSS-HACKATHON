@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <div>
+        Calculator
+    </div>
+    <br>
+</head>
+
+<body>
+
+    <form name="calcForm" class="calci" action="calculatorPage.html" method="POST">
+        <div class="inputMargin">
+            
+            <input type="number1" class="numberBoxInput" id="numberBoxInput1" name="num1" placeholder="First Number">
+            <br>
+            <br> 
+            <input type="number2" class="numberBoxInput" id="numberBoxInput2" name="num2"placeholder="Second Number">
+        </div>
+        <br>
+        <input type="button" class="operator" value="+" onclick="calcForm.answer.value=add(calcForm.num1.value, calcForm.num2.value)">
+        <input type="button" class="operator" value="-" onclick="calcForm.answer.value=sub(calcForm.num1.value, calcForm.num2.value)">
+        <input type="button" class="operator" value="*" onclick="calcForm.answer.value=multiplyNumbers(calcForm.num1.value, calcForm.num2.value)">
+        <input type="button" class="operator" value="/" onclick="calcForm.answer.value=divide(calcForm.num1.value, calcForm.num2.value)">
+
+        
+        <br>
+        <br>
+        <input type="text" name="answer" id="display">
+
+        <br>
+        <br>
+        <input type="button" class="historyClear" value="Clear History" >
+        <input type="button" class="historyClear" value="Clear Numbers" name="historyResetButton"  onclick="historyResetFunction()" >
+        <br>
+        <br>
+        <input class="history" type="text" placeholder="Disabled input"id="historyLog" aria-label="Disabled input example" disabled >
+   </form>
+
+   <script src="./calculatorLogic.js"></script>
+</body>
+
+</html>
